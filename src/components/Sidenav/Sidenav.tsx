@@ -19,25 +19,19 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import { useNavigate } from "react-router";
-import HomeIcon from '@mui/icons-material/Home';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
-import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
-import CategoryIcon from '@mui/icons-material/Category';
-import SummarizeIcon from '@mui/icons-material/Summarize';
-import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
-import ReceiptIcon from '@mui/icons-material/Receipt';
-import HandshakeIcon from '@mui/icons-material/Handshake';
-import SettingsIcon from '@mui/icons-material/Settings';
-import PeopleIcon from '@mui/icons-material/People';
-import HelpIcon from '@mui/icons-material/Help';
-import LogoutIcon from '@mui/icons-material/Logout';
-
-const drawerWidth = 240;
-
-{
-  /* ======================================Appbar with Search===================================== */
-}
+import HomeIcon from "@mui/icons-material/Home";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
+import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
+import CategoryIcon from "@mui/icons-material/Category";
+import SummarizeIcon from "@mui/icons-material/Summarize";
+import AccountBalanceWalletIcon from "@mui/icons-material/AccountBalanceWallet";
+import ReceiptIcon from "@mui/icons-material/Receipt";
+import HandshakeIcon from "@mui/icons-material/Handshake";
+import SettingsIcon from "@mui/icons-material/Settings";
+import PeopleIcon from "@mui/icons-material/People";
+import HelpIcon from "@mui/icons-material/Help";
+import LogoutIcon from "@mui/icons-material/Logout";
 import { alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
@@ -48,6 +42,14 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { Home } from "@mui/icons-material";
+
+const drawerWidth = 240;
+
+
+
+{
+  /* ======================================Appbar Logic===================================== */
+}
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -89,7 +91,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 {
-  /* ======================================Appbar end===================================== */
+  /* ======================================Appbar Logic end===================================== */
 }
 
 const openedMixin = (theme: Theme): CSSObject => ({
@@ -377,10 +379,9 @@ export default function Navbar() {
           {renderMenu}
         </Box>
       </AppBar>
-      <Drawer  variant="permanent" open={open} >
-        <DrawerHeader >
-
-          <IconButton 
+      <Drawer variant="permanent" open={open}>
+        <DrawerHeader>
+          <IconButton
             onClick={() => {
               setOpen(!open);
             }}
@@ -433,7 +434,7 @@ export default function Navbar() {
                       },
                 ]}
               >
-                <HomeIcon/>
+                <HomeIcon />
               </ListItemIcon>
               <ListItemText
                 primary="Home"
