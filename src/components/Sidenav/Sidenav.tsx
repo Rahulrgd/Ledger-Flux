@@ -301,8 +301,7 @@ export default function Navbar() {
               <IconButton
                 color="inherit"
                 aria-label="open drawer"
-                // onClick={handleDrawerOpen}
-                // onClick={()=>setOpen(!open)}
+                onClick={handleDrawerOpen}
                 edge="start"
                 sx={[
                   {
