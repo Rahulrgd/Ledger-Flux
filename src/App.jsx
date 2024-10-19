@@ -21,10 +21,10 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Box sx={{ display: "flex" }}>
-          <Sidenav />
-          <Box>
+          <Sidenav/>
+          <Box sx={{mt:"80px", ml:"20px"}}>
             <Routes>
               <Route path="/" exact element={<Home />} />
               <Route path="/dashboard" exact element={<Dashboard />} />
