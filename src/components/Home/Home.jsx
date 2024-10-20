@@ -1,15 +1,34 @@
-import React from "react";
+import * as React from "react";
+import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid2";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Stack from "@mui/material/Stack";
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: "#fff",
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: "center",
+  color: theme.palette.text.secondary,
+  ...theme.applyStyles("dark", {
+    backgroundColor: "#1A2027",
+  }),
+}));
 
 function Home() {
   return (
-    <div>
-      <Box sx={{ display: "flex" }}>
-        <Box>
-          <h1 className=" text-blue-700">Home Page Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempora reprehenderit corrupti dolorem vel quasi necessitatibus voluptas atque error! Facilis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. In nobis pariatur totam, ipsam veritatis at, ut aut, maxime aspernatur laudantium inventore fugit non placeat omnis? Doloremque consequatur vel et voluptatibus vero ab eos quisquam quam labore libero deserunt minima voluptas saepe officiis, harum alias eum laborum quis odit esse reiciendis omnis nobis. Sunt a veritatis atque voluptas dolor, dignissimos vitae quasi ratione rem consequuntur odio magni maiores omnis sed autem! Commodi dicta mollitia ullam sit provident aspernatur praesentium fugiat dolorum, sint exercitationem vero? Facere cupiditate, consectetur saepe quibusdam non quam. Dolores velit dolore tempore? Excepturi provident libero placeat deleniti illo voluptatum odit ea itaque omnis, veniam odio magnam ex nostrum magni sapiente enim, eaque vel in voluptate facere? Repellat deserunt adipisci doloremque et dolorem possimus, dolor consequuntur in consequatur ullam cupiditate quibusdam sequi, distinctio aperiam, culpa tenetur fugiat. Minus nobis necessitatibus dolorem, quidem reprehenderit nemo quis! Reiciendis voluptas deleniti, vel autem nulla ad minima! Accusamus natus expedita laboriosam placeat sit nesciunt delectus officia deserunt exercitationem sequi ipsam veniam rem obcaecati maxime numquam debitis amet doloribus iste voluptatem porro ratione, sed iure. Omnis, corporis ratione blanditiis perspiciatis velit nam recusandae magni quibusdam sapiente modi hic provident, odio illo aspernatur quas rerum.</h1>
-        </Box>
-      </Box>
-    </div>
+    <>
+      <div className=" text-green-700">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores, voluptate laudantium esse quis magnam doloribus repudiandae repellendus, reprehenderit modi iusto. Voluptate, ipsa ea! Repellat eligendi neque aliquam est rerum!</p>
+      </div>
+    </>
   );
 }
 

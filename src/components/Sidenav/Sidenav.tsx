@@ -45,8 +45,6 @@ import { Home } from "@mui/icons-material";
 
 const drawerWidth = 240;
 
-
-
 {
   /* ======================================Appbar Logic===================================== */
 }
@@ -234,7 +232,16 @@ export default function Navbar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      <MenuItem
+        onClick={() => {
+          navigate("/login");
+        }}
+      >
+        Login
+      </MenuItem>
+      <MenuItem onClick={() => {
+          navigate("/profile");
+        }}>Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
     </Menu>
   );
@@ -294,7 +301,7 @@ export default function Navbar() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar className="mb-1" position="fixed" open={open}>
+      <AppBar color="secondary" className="mb-1" position="fixed" open={open}>
         <Box sx={{ flexGrow: 1 }}>
           <AppBar position="static">
             <Toolbar>
@@ -318,7 +325,7 @@ export default function Navbar() {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                MUI
+                Ledger Flux
               </Typography>
               <Search>
                 <SearchIconWrapper>
@@ -379,7 +386,7 @@ export default function Navbar() {
           {renderMenu}
         </Box>
       </AppBar>
-      <Drawer variant="permanent" open={open}>
+      <Drawer variant="permanent" open={open} >
         <DrawerHeader>
           <IconButton
             onClick={() => {

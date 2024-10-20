@@ -16,6 +16,8 @@ import Users from "./components/Users/Users";
 import HelpAndSupport from "./components/HelpAndSupport/HelpAndSupport";
 import Logout from "./components/Logout/Logout";
 import Navbar from "./components/Navbar/Navbar";
+import Login from "./components/Login/Login";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
@@ -46,6 +48,8 @@ function App() {
                 exact
                 element={<HelpAndSupport />}
               />
+              <Route path="/profile" exact element={<Profile />} />
+              <Route path="/login" exact element={<Login />} />
               <Route path="/logout" exact element={<Logout />} />
             </Routes>
           </Box>
