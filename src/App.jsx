@@ -26,7 +26,7 @@ function App() {
         {/* <Navbar /> */}
         <Box sx={{ display: "flex" }}>
           <Sidenav/>
-          <Box sx={{mt:"80px", ml:"20px"}}>
+          <Box sx={{ flexGrow: 1, mt: "80px", ml: "20px", p: 2 }}>
             <Routes>
               <Route path="/" exact element={<Home />} />
               <Route path="/dashboard" exact element={<Dashboard />} />

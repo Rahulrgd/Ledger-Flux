@@ -25,8 +25,29 @@ const Item = styled(Paper)(({ theme }) => ({
 function Home() {
   return (
     <>
-      <div className=" text-green-700">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores, voluptate laudantium esse quis magnam doloribus repudiandae repellendus, reprehenderit modi iusto. Voluptate, ipsa ea! Repellat eligendi neque aliquam est rerum!</p>
+      <div>
+        <div>
+          <div className="card" style={{ width: "18rem" }}>
+            <img src="..." className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+            </div>
+          </div>
+        </div>
+        <div>Recent Transactions</div>
+        <div>Income vs Expense Chart</div>
+        <div>Account Balances Summary</div>
+        <div>Upcoming Payments/Receivables</div>
+        <div>Monthly/Yearly Overview</div>
+        <div>Net Profit/Loss</div>
+        <div>Custom Data Range Filters</div>
+        <div>Search and Filter Transcations</div>
+        <div>Download/Export Report Buttons</div>
+        <div>Quick Add Transaction Button</div>
+        <div>Account Performance Graphs</div>
+        <div>User Activity Summary</div>
+        <div>Allerts and Notificaitons</div>
+        <div>Settings and preference</div>
       </div>
     </>
   );

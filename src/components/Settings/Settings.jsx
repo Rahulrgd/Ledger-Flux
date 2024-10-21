@@ -1,8 +1,11 @@
 import React from 'react'
+import SettingsPage from './SettingsPage'
 
 function Settings() {
   return (
-    <div>Settings</div>
+    <div>
+      <SettingsPage/>
+    </div>
   )
 }
 
